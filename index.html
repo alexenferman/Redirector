@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&family=Oswald&display=swap" type="text/css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+<link rel="stylesheet" href="./material/material.min.css">
+<link rel="stylesheet" href="./style.css">
+<script src="./material/material.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="import" href="./sidemenu.html">
+<link rel="icon" type="image/png" href="./favicon.png"/>
+<title>Redirecting</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+overflow: hidden
+padding-left: 30px
+}
+h6 {
+padding-left: 30px
+}
+button {
+padding-left: 30px
+}
+form {
+padding-left: 30px
+}
+</style>
+<script>
+function login() {	
+	var x = document.getElementById("login");
+	x.style.display = "block";
+}
+
+function incorrect() {	
+    var x = document.getElementById("incorrect");
+	x.style.display = "none";
+	var x = document.getElementById("incorrect");
+	x.style.display = "block";
+}
+</script>
+</head>
+<body>
+ 
+<h6>This is a redirector which redirects alexenfermen.tk users to alexenferman.com</h6>
+
+<a style="padding-left: 30px" href="https://www.alexenferman.com"><button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+  Go to Alexenferman.com
+</button></a>
+<a style="padding-left: 30px" href="https://old.alexenferman.com"><button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+  Go to the old site
+</button></a>
+<a style="padding-left: 30px"><button onclick="login()" class="mdl-button mdl-js-button mdl-button--raised">
+  Login
+</button></a>
+
+<div style="display: none;" id="login">
+<div id="incorrect" style="display: none;">
+<h6 style="color: red;">Incorrect Username/Password.</h6>
+</div>
+<form action="#">
+  <div class="mdl-textfield mdl-js-textfield">
+    <input class="mdl-textfield__input" type="text" id="sample1">
+    <label class="mdl-textfield__label" for="sample1">Username</label>
+  </div>
+  <div class="mdl-textfield mdl-js-textfield">
+    <input class="mdl-textfield__input" type="password" id="sample1">
+    <label class="mdl-textfield__label" for="sample1">Password</label>
+  </div>
+</form>
+<a style="padding-left: 30px"><button onclick="incorrect()" class="mdl-button mdl-js-button mdl-button--raised">
+  Login
+</button>
+</a>
+
+</body>
